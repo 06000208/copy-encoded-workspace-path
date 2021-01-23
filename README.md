@@ -6,7 +6,7 @@ This is a fork of [alexdima's extension](https://github.com/alexdima/vscode-copy
 - Is workspace absolute (Starts with `/`)
 - Is [URI Encoded](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) (Ie, spaces are replaced with `%20`, and so on)
 
-Visual Studio Code's normal `Copy Relative Path`, on windows:
+Visual Studio Code's normal Copy Relative Path, on windows:
 
 `example folder\example file.md`
 
