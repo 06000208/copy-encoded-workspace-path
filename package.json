@@ -1,9 +1,9 @@
 {
-  "name": "copy-relative-path",
-  "displayName": "Copy Relative Path",
-  "description": "Copy Relative Path from a File",
-  "version": "0.0.2",
-  "publisher": "alexdima",
+  "name": "copy-encoded-workspace-path",
+  "displayName": "Copy Encoded Workspace Path",
+  "description": "Copy a URI Encoded workspace-absolute path from a file",
+  "version": "0.0.1",
+  "publisher": "06000208",
   "engines": {
     "vscode": "^1.4.0"
   },
@@ -11,31 +11,28 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:copyRelativePath"
+    "onCommand:copyEncodedWorkspacePath"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [
       {
-        "command": "copyRelativePath",
-        "title": "Copy Relative Path"
+        "command": "copyEncodedWorkspacePath",
+        "title": "Copy Encoded Workspace Path"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "copyRelativePath"
+          "command": "copyEncodedWorkspacePath"
         }
       ],
       "editor/title/context": [
         {
-          "command": "copyRelativePath"
+          "command": "copyEncodedWorkspacePath"
         }
       ]
     }
-  },
-  "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
     "vscode": "^0.11.0"
@@ -45,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexandrudima/vscode-copy-relative-path"
+    "url": "https://github.com/06000208/vscode-copy-relative-path"
   },
   "bugs": {
-    "url": "https://github.com/alexandrudima/vscode-copy-relative-path/issues"
+    "url": "https://github.com/06000208/vscode-copy-relative-path"
   }
 }

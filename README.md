@@ -1,7 +1,17 @@
-# Copy Relative Path
+# Copy Encoded Workspace Path
 
-![copy-relative-path](https://cloud.githubusercontent.com/assets/5047891/18313606/d284b04a-750f-11e6-9d0a-8c4f6a3a562e.gif)
+This is a fork of [alexdima's extension](https://github.com/alexdima/vscode-copy-relative-path) in order to give you a context menu option for copying paths that:
 
-![copy-relative-path-editor-tab](https://user-images.githubusercontent.com/1461792/32966849-c6d47e68-cba0-11e7-8451-f46dfba525fe.gif)
+- Uses the unix path seperator (`/`)
+- Is workspace absolute (Starts with `/`)
+- Is [URI Encoded](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) (Ie, spaces are replaced with `%20`, and so on)
 
-**Enjoy!**
+Visual Studio Code's normal Copy Relative Path:
+
+`example folder\example file.md`
+
+Copy Encoded Workspace Path:
+
+`/example%20folder/example%20file.md`
+
+As this is incredibly niche (and [not up to spec](https://www.npmjs.com/package/vscode)), it's not published on the marketplace. You can use this extension via [vsce](https://www.npmjs.com/package/vsce), assuming it still works.
